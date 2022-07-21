@@ -76,7 +76,7 @@ h2{
 .frame span{
 	display: inline-block;
 	margin-bottom: 2rem;
-	font-size: calc(var(--index) * 1.2);
+	font-size: calc(var(--index) * 1.8);
 	font-weight: 100;
 	line-height: 1.5;
 }
