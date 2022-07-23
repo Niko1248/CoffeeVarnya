@@ -21,7 +21,12 @@ window.onscroll = function() {
 				opacity = zVals[i] < Math.abs(zSpacing) / 1.8 ? 1 : 0
 		frame.setAttribute('style', `transform: ${transform}; opacity: ${opacity}`)
 	})
-
+	let flexLink = document.querySelector('.frame__link')
+	if (lastPos >= 2285){
+		flexLink.classList.add('frame__link--active');
+	}else{
+			flexLink.classList.remove('frame__link--active');
+	}
 }
 
 window.scrollTo(0, 1)

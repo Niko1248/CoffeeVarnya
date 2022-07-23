@@ -6,9 +6,9 @@
 :root {
 	--index: calc(1vw + 1vh);
 	--gutter: 30px;
-	--side-small: 27;
+	--side-small: 26;
 	--side-big: 36;
-	--depth: 3650px;
+	--depth: 3700px;
 	--transition: 1s cubic-bezier(.075, .5, 0, 1)
 }
 
@@ -114,16 +114,12 @@ video.frame-media_left {
 	position: relative;
 	right: 18vw;
 }
-.frame h3 {
+h3 {
 	font-size: calc(var(--index) * 3);
 }
 .frame p {
 	max-width: 30vw;
 	margin-top: 3vh;
-}
-.frame__link{
-	position: relative;
-	z-index: 999;
 }
 
 .soundbutton {
@@ -136,4 +132,42 @@ video.frame-media_left {
 }
 .soundbutton.paused {
 	opacity: .25;
+}
+.frame__link{
+	opacity: 0;
+}
+.frame__link--active{
+	display: block;
+	position: fixed;
+	top: 30vh;
+	left: 15vw;
+	transition: 1.5s linear;
+	opacity: 1;
+}
+.frame__flex{
+	display: flex;
+	flex-direction: column;
+	width: 30vw;
+	justify-content: space-between;
+}
+.frame__link-item{
+	display: flex;
+	margin-bottom: 20px;
+	align-items: center;
+}
+.frame__link-item img{
+	display: block;
+	justify-content: space-between;
+	width: 10%;
+	height: 10%;
+	margin-right: 20px;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+a:hover{
+	color: blue;
+	transition: .5s ease;
+	margin-left: 10px;
 }
